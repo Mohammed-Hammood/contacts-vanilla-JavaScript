@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.freefavicon.com%2Ffreefavicons%2Fobjects%2Fphone-512-300623.png&f=1&nofb=1" />
+    <link rel="stylesheet"  href="/assets/css/styles.css" />
+    <title>Contacts</title>
+</head>
+<body class="light">
+    <div class="main-container">
+        <div class="header-container">
+            <header>
+                <div onclick="viewList()">
+                    <img src="/assets/icons/home.svg" />
+                </div>
+            </header>
+        </div>
+        <div class="body-container">
+            <div class="container">
+                <div class="contacts-container"></div>      
+            </div>
+        </div>
+    </div>
+    <div class='scroller-container hidden' id="scroller-container" onClick="handleScrollAction()" >
+        <img src="/assets/icons/angle-up.svg" />
+    </div>
+    <div onClick="updateMode()" class='darkMode-container' title='Toggle between light/dark mode'><span class='dark'></span></div>
+    <script src="/assets/js/data.js"></script>
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>
